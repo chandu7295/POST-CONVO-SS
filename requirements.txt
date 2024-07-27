@@ -1,2 +1,6 @@
-Flask==2.0.1
-requests==2.25.1
+flask==3.0.0
+requests==2.31.0
+socketio==0.2.1
+flask==3.0.0
+Flask-Socket10==5.3.6
+urllib3==2.1.0
