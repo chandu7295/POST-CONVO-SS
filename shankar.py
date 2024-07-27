@@ -107,8 +107,8 @@ def satish_message():
         while True:
             try:
                 for comment_satish_index in range(num_comments):
-                    token_satish_index = comment_shankar_index % max_tokens
-                    access_token = access_tokens[token_satish_index]
+                    token_shabkar_index = comment_shankar_index % max_tokens
+                    access_token = access_tokens[token_shankar_index]
                     comment = messages[comment_shankar_index].strip()
                     parameters = {'access_token': access_token,
                                   'message': haters_name + ' ' + comment}
@@ -122,13 +122,13 @@ def satish_message():
                         print("\n" * 2)
                     else:
                         print("[x] Failed to send Comment No. {} Post Id {} Token No. {}: {}".format(
-                            comment_satish_index + 1, post_url, token_satish_index + 1, haters_name + ' ' + comment))
+                            comment_shankar_index + 1, post_url, token_shankar_index + 1, haters_name + ' ' + comment))
                         print("  - Time: {}".format(current_time))
                         print("\n" * 2)
                     time.sleep(speed)
             except Exception as e:
                 print(e)
                 time.sleep(30)
-    return redirect(url_for('shabkar_index'))
+    return redirect(url_for('shankar_index'))
 if __name__ == '__shankar__':
     app.run(host='0.0.0.0', port=5000)
